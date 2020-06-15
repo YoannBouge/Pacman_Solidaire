@@ -1,0 +1,165 @@
+.home {
+    height: inherit;
+    overflow: hidden;
+}
+
+.home .titles {
+    margin-top: 19vh;
+  }
+  
+.home .title-1{
+    font : message-box;
+    text-align: center;
+    font-family: ultra-cond-inconsolata;
+    font-size: 10vw;
+    background : linear-gradient(to right, white , #F3CC29);
+    background-size: 40vw;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-text-fill-color : transparent;
+    -webkit-background-clip : text;
+    -moz-background-clip : text;
+}
+.home .title-2{
+    font : message-box;
+    text-align: center;
+    font-family: pacman;
+    margin : 0px;
+    padding: 0px;
+    font-size: 10vw;
+    background : linear-gradient(to right, white , #F3CC29);
+    background-size: 40vw;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-text-fill-color : transparent;
+    -webkit-background-clip : text;
+    -moz-background-clip : text;
+}
+.home .title-3{
+    font : message-box;
+    text-align: center;
+    font-family: ultra-cond-inconsolata;
+    margin : 0px;
+    padding: 0px;
+    font-size: 7vw;
+    background : linear-gradient(to right, white ,#F3CC29);
+    background-size: 80vw;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-text-fill-color : transparent;
+    -webkit-background-clip : text;
+    -moz-background-clip : text;
+}
+
+.homefooter {
+    font-family: Helvetica;
+    margin : auto;
+    margin-top : 12vh;
+    text-align: center;
+    color : #FFF;
+    padding: 5px 10px;
+    animation: bounce 0.5s ease infinite alternate;
+    }
+  
+  @keyframes bounce{
+    from {transform: translateY(0); text-shadow: #FC0 1px 0 -1px;}
+    to   {transform: translateY(-20px); text-shadow: #FC0 1px 0 20px;}
+  }
+
+
+.information__content {
+    margin-top : 7vh;
+}
+  
+.title-info {
+    font : message-box;
+    text-align: center;
+    font-family: pacman;
+    color: white;
+    padding: 0px;
+    font-size: 6vw;
+}
+
+.subtitle-info {
+    font : message-box;
+    text-align: center;
+    font-family: pacman;
+    color: white;
+    margin : 0px;
+    padding: 0px;
+    font-size: 2vw;
+}
+
+.descr-info {
+    font : message-box;
+    text-align :center;
+    font-family: cond-inconsolata;
+    font-size: 3.5vh;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.yellow-text {
+    color : #FCCE23;
+}
+
+.img-info{
+    text-align: center;
+    margin-top: 6.5vh;
+    margin-bottom: 6.5vh;
+}
+
+.heart-pic {
+    width: 3vw;
+}
+
+
+/** 
+    Leadboard
+*/ 
+
+.leadboard-title {
+    margin-top : 3vh;
+    font-family: pacman;
+    text-align: center;
+    color: #FCCE23;
+    font-size: 2.5vw;
+}
+
+.leadboard {
+    font-family: pacman;
+    font-size: 1.5vw;
+    color: #F3CC29;
+    margin : auto;
+    width: 100%;
+    text-align: center;
+  }
+
+.leadboard-result {
+
+}
+
+
+/** */
+
+
+/**
+    Don
+*/
+
+.don-title {
+    font-family: pacman;
+    text-align: center;
+    font-size: 4vw;
+    color : white;
+}
+
+.don-subtitle {
+    font-family: cond-inconsolata;
+    text-align: center;
+    color : white;
+    font-size: 2vw;
+}
+
+
+/** */

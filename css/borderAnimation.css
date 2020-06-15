@@ -1,0 +1,54 @@
+.screen .border_animation{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+  }
+  
+.screen .border_animation:nth-child(1){ /* border-top */
+    transform:rotate(0deg) translateX();
+}
+
+.screen .border_animation:nth-child(2){ /* border-bottom*/
+    transform:rotate(180deg) translateY(22px);
+}
+
+.screen .border_animation:nth-child(3){ /* border-right */
+    transform:rotate(90deg);
+}
+
+.screen .border_animation:nth-child(4){ /* border-left */
+    transform:rotate(270deg);
+}
+
+.screen .border_animation:before{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 2.5px;
+    background: #F3CA30;
+    animation: animate 4s linear infinite;
+}
+  
+@keyframes animate {
+    0%{
+        transform:scaleX(0);
+        transform-origin: left;
+    }
+    50%{
+        transform:scaleX(1);
+        transform-origin: left;
+    }
+    50.1%{
+        transform:scaleX(1);
+        transform-origin: right;
+    }
+
+    100%{   
+        transform:scaleX(0);
+        transform-origin: right; 
+    }
+}

@@ -1,0 +1,270 @@
+@font-face {
+  font-family: 'pixel';
+  src: url('../font/silkscreen_normal_macroman/slkscr-webfont.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'pacman';
+  src: url('../font/fonts_pacman/crackman\ front.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'inconsolata';
+  src: url('../font/fonts_inconsolata/Inconsolata-Bold.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'cond-inconsolata';
+  src: url('../font/fonts_inconsolata/InconsolataCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'ultra-cond-inconsolata';
+  src: url('../font/fonts_inconsolata/InconsolataUltraCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+#shim {
+  font-family: 'Permanent Marker', cursive;
+  position: absolute;
+  visibility: hidden
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: yellow;
+}
+
+.top-spacer{
+      margin-top: 10% ;
+}
+body {
+  margin: 0px auto;
+  font-family: inconsolata, bold ; 
+  max-width: 99vw !important;
+}
+
+a {
+  text-decoration: none;
+  color: #0000FF;
+}
+
+.headerbar{
+  color: black;
+  font-size: 25px
+}
+
+
+.blackb{
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.whiteb {
+  margin: auto !important;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  width: 600px;
+
+}
+
+.whiteb h1 {
+  align-items: center;
+  font-family: 'inconsolata', normal;
+  color: black;
+}
+
+.whiteb h3{
+  font-family: 'inconsolata', normal;
+  color: black;
+} 
+
+.card {
+  width: 18rem;
+  align-items: center;
+  border : none !important;
+}
+
+
+.col-6 {
+  margin: auto;
+}
+
+.screen {
+  height : 100vh;
+  background: url("./img/spacebg.png");
+  background-size: cover !important;
+  background-attachment: fixed;
+  background-position: center;
+  border: 2px solid yellow;
+}
+
+/** 
+  CAROUSEL ASSO 
+*/ 
+#carousel__asso {
+  width: 25vw;
+  margin-left: 22vw;
+}
+
+.carousel {
+  position : relative; 
+  /* overflow: hidden; */
+}
+
+.carousel__container{
+  transition: transform 0.3s;
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel__container::after {
+  content : '';
+  clear : both;
+  display : table;
+}
+
+
+.carousel__item {
+  float: left;
+  transition: transform 0.3s;
+}
+
+.carousel__next, .carousel__prev {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgba(0,0,0,0) url('img/fleche_r.png') center center no-repeat;
+  background-size: 40px 40px;
+  top: 50%;
+  margin-top: -20px;
+  right: 0px; /* ou -20px en retirant overflow : hidden; du carousel */
+  cursor: pointer; 
+  transition: transform 0.3s;
+}
+
+.carousel__next:hover {
+  transform: none;
+  transform: translateX(670%) scale(1.6);
+}
+
+.carousel__prev:hover{
+  transform: none;
+  transform: translateX(-670%) scale(1.6);
+}
+
+.carousel__prev {
+  background-image: url(img/fleche_g.png);
+  right: auto;
+  left: 0px; /* ou 20px en retirant overflow : hidden; du carousel */
+  transform: translateX(-670%);
+}
+
+.carousel__next {
+  transform: translateX(670%);
+}
+
+#carousel__asso > div > div.carousel__container > div > div {
+  margin-left: 6.9vw;
+  background-color: rgba(0,0,0,0);
+}
+
+.imgcard{
+  text-align: center;
+  width: 50vw !important; 
+  object-fit: contain; 
+  height: 80vh;
+}
+
+*[draggable=true] {
+  -moz-user-select:none;
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  cursor: move;
+}
+
+#Dragme {
+    background-color: #90ee90;
+    border: solid 2px #006400;
+    cursor: pointer;
+    display: block;
+    height: 70px;
+    width: 70px;
+
+}
+
+#Dropzone {
+    background-color: #add8e6;
+    border: solid 2px darkblue;
+    height: 200px;
+    margin-bottom: 14px;
+    padding: 7px;
+    width: 300px;
+}
+
+/** */
+
+
+/**
+  GameScreen
+*/
+
+.game {
+  margin-top: 7vh !important;
+  height : 700px !important;
+}
+
+canvas {
+  border: 4mm ridge rgba(255, 255, 0, 0.75);
+}
+
+
+#pacman {
+  height: 470px;
+  width: 382px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.rules {
+  font : message-box;
+  text-align :center;
+  font-family: cond-inconsolata;
+  font-size: 1.5vw;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.rules-title{
+  font-family: pacman;
+  font-size: 3vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  text-shadow: aliceblue 1px 0 10px;
+}
+
+.rules-content {
+  
+}
+
+.rules-paragraph {
+  
+}
+
+
+/** */ 
